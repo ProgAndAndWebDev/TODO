@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="@color/white"
+    android:layout_marginVertical="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@+id/check_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/tv_date_day"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_date_day"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/tv_date_day"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Tue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/viewLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewLine" />
+
+        <TextView
+            android:id="@+id/tv_date_day_number"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="09"
+            android:textColor="@color/secondColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_date_day"
+            app:layout_constraintStart_toStartOf="@+id/tv_date_day"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_day" />
+
+        <TextView
+            android:id="@+id/tv_date_month"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Dec"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_date_day"
+            app:layout_constraintStart_toStartOf="@+id/tv_date_day"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_day_number" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:background="@color/gray"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_date_day"
+            app:layout_constraintStart_toEndOf="@+id/tv_date_day"
+            app:layout_constraintTop_toTopOf="@+id/tv_date_day" />
+
+        <TextView
+            android:id="@+id/tv_titleTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Work"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/viewLine"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:textSize="16sp"
+            android:gravity="center|start"
+            android:drawablePadding="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_titleTask"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titleTask"
+            app:drawableStartCompat="@drawable/ic_baseline_access_time_24" />
+
+        <TextView
+            android:id="@+id/tv_praiorty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="LOW"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644" />
+
+        <ImageButton
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_done"
+            android:src="@drawable/ic_checked"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_titleTask" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

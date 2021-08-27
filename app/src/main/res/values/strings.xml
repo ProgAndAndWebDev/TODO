@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="myday">My Day</string>
+    <string name="Important">Important</string>
+    <string name="todo">TODO</string>
+    <string name="Planned">Planned</string>
+    <string name="assingned">Assingned to you</string>
+    <string name="task">Tasks</string>
+    <string name="newList">New List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="low">LOW</string>
+    <string name="Medium">MEDIUM</string>
+    <string name="high">HIGH</string>
+    <string name="long_message">Are you sure to delete this task??</string>
+    <string name="decline">No</string>
+    <string name="accept">Sure</string>
+    <string name="action_text">Undo</string>
+    <string name="text_label">Are you sure you have completed this task?</string>
+</resources>
